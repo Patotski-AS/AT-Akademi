@@ -1,0 +1,22 @@
+// какой-то текст
+// какой-то текст
+// какой-то текст
+// какой-то текст
+
+/*
+    какой-то текст
+    какой-то текст
+    какой-то текст
+    какой-то текст
+*/
+
+public static void arrayToFile
+
+public static void sortIntFile
+
+public static void unionFile
+
+public static void main(String[] args)
+
+Любой
+другой текст
