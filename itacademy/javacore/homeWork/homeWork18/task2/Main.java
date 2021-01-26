@@ -29,11 +29,11 @@ public class Main {
         for (int i = 0; i < emailElements.getLength(); i++) {
             Element email = (Element) emailElements.item(i);
             emails.add(new Email(
-                    Integer.parseInt(email.getElementsByTagName("id").item(0).getChildNodes().item(0).getNodeValue())
-                    , email.getElementsByTagName("to").item(0).getChildNodes().item(0).getNodeValue()
-                    , email.getElementsByTagName("from").item(0).getChildNodes().item(0).getNodeValue()
-                    , email.getElementsByTagName("heading").item(0).getChildNodes().item(0).getNodeValue()
-                    , email.getElementsByTagName("body").item(0).getChildNodes().item(0).getNodeValue()));
+                    Integer.parseInt(email.getElementsByTagName("id").item(0).getTextContent())
+                    , email.getElementsByTagName("to").item(0).getTextContent()
+                    , email.getElementsByTagName("from").item(0).getTextContent()
+                    , email.getElementsByTagName("heading").item(0).getTextContent()
+                    , email.getElementsByTagName("body").item(0).getTextContent()));
         }
 
         for (Email email : emails) {
