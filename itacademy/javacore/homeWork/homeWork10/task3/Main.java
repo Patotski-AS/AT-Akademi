@@ -1,8 +1,10 @@
 package com.itacademy.javacore.homeWork.homeWork10.task3;
 
-//Создать файл(в коде), заполненный случайными целыми числами(DataOutput/InputStream).
-//        Прочитать его и найти среднее арифметическое чисел из файла.
-//
+
+/**
+ * Создать файл(в коде), заполненный случайными целыми числами(DataOutput/InputStream).
+ * Прочитать его и найти среднее арифметическое чисел из файла.
+ */
 
 import java.io.*;
 import java.util.ArrayList;
@@ -11,7 +13,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        String path = "D:\\JAVA\\RUSH\\src\\com\\itacademy\\javacore\\homeWork\\homeWork10\\task3\\";
+        String path = "D:\\JAVA\\JAVA\\src\\com\\itacademy\\javacore\\homeWork\\homeWork10\\task3\\";
         File file = new File(path + "qwerty.txt");
         writerRandomInt(file);
         System.out.printf(" %.2f", averageInt(file));
