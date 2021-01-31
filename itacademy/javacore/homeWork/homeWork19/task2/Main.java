@@ -23,8 +23,8 @@ public class Main {
                     .addLastName("Family" + i)
                     .addFather(new Person("Father" + i, new Random().nextInt(20) + 18))
                     .addMother(new Person("Mather" + i, new Random().nextInt(20) + 18))
-                    .addChildren(new Person("Child" + i, new Random().nextInt(5) + 5))
-                    .addChildren(new Person("Child" + i, new Random().nextInt(5) + 5))
+                    .addChildren(new Person("Child1-" + i, new Random().nextInt(5) + 5))
+                    .addChildren(new Person("Child2-" + i, new Random().nextInt(5) + 5))
                     .createFamily());
         }
         File file = new File("D:\\JAVA\\JAVA\\src\\com\\itacademy\\javacore\\homeWork\\homeWork19\\task2\\families.json");
