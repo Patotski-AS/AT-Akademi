@@ -38,6 +38,9 @@ public class Person {
         Constructor[] constructors = c.getConstructors();
 
 
+        SignCode ann = (SignCode) c.getAnnotation(SignCode.class);
+        System.out.println(c.getName() + "[type:" + ann.type() + ", id:" + ann.id() + "]");
+
         Arrays.stream(fields)
                 .filter(field -> !Modifier.isStatic(field.getModifiers()))
                 .forEach(field -> {
