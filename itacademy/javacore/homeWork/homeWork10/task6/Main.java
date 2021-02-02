@@ -1,18 +1,16 @@
 package com.itacademy.javacore.homeWork.homeWork10.task6;
 
 
-import com.sun.org.apache.xerces.internal.impl.xpath.XPath;
-
 import java.io.*;
 import java.nio.file.Files;
 
-//( * - необязательная задача) Прочитать текст Java-программы,
-//        удалить из него все виды комментариев (// и /* */), все слова public в
-//// объявлении атрибутов и методов класса заменить на слово private.
+/**
+ * ( * - РЅРµРѕР±СЏР·Р°С‚РµР»СЊРЅР°СЏ Р·Р°РґР°С‡Р°) РџСЂРѕС‡РёС‚Р°С‚СЊ С‚РµРєСЃС‚ Java-РїСЂРѕРіСЂР°РјРјС‹,
+ * СѓРґР°Р»РёС‚СЊ РёР· РЅРµРіРѕ РІСЃРµ РІРёРґС‹ РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ (), РІСЃРµ СЃР»РѕРІР° public
+ * РІ РѕР±СЉСЏРІР»РµРЅРёРё Р°С‚СЂРёР±СѓС‚РѕРІ Рё РјРµС‚РѕРґРѕРІ РєР»Р°СЃСЃР° Р·Р°РјРµРЅРёС‚СЊ РЅР° СЃР»РѕРІРѕ private.
+ */
 public class Main {
     public static void main(String[] args) {
-
-        // В File.txt - подопытный текст. копируется File1.txt для проверки.
 
         String path = "D:\\JAVA\\RUSH\\src\\com\\itacademy\\javacore\\homeWork\\homeWork10\\task6\\";
 
@@ -50,8 +48,6 @@ public class Main {
                 }
                 writer.write(string + "\n");
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
